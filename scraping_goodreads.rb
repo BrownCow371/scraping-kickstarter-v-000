@@ -3,12 +3,13 @@ require 'pry'
 require "open-uri"
 
 def create_project_hash
+  books = {}
   html = open("https://www.goodreads.com/genres/fiction")
   binding.pry
   goodreads_fiction = Nokogiri::HTML(html)
 
 
-  books = {}
+  
 
   #title =
   goodreads_fiction.css(".bigBoxBody.bookBox script").each do |book|
