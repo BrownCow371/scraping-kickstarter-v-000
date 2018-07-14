@@ -1,6 +1,6 @@
 require 'nokogiri'
-require 'pry'
 require "open-uri"
+require 'pry'
 
 def create_project_hash
   books = {}
