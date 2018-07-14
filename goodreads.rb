@@ -4,6 +4,7 @@ require 'pry'
 
 def create_book_hash
   books = {}
+  books
   binding.pry
 
   # goodreads_fiction = Nokogiri::HTML(open("https://www.goodreads.com/genres/fiction/"))
@@ -20,5 +21,5 @@ def create_book_hash
   #     :percent_funded => project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
   #   }
   #  end
-   books
+  
 end
