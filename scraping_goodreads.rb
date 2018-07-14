@@ -1,13 +1,13 @@
 require 'nokogiri'
 require 'pry'
-require "open-uri"
+require "Open-URI"
 
 def create_project_hash
   html = open("https://www.goodreads.com/genres/fiction")
-
+  binding.pry
   goodreads_fiction = Nokogiri::HTML(html)
 
-  binding.pry
+
   books = {}
 
   #title =
