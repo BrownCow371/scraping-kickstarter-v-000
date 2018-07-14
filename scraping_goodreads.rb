@@ -4,8 +4,9 @@ require 'pry'
 
 def create_project_hash
   books = {}
-  goodreads_fiction = Nokogiri::HTML(open("https://www.goodreads.com/genres/fiction/"))
-binding.pry
+  binding.pry
+
+  # goodreads_fiction = Nokogiri::HTML(open("https://www.goodreads.com/genres/fiction/"))
 
 
 
