@@ -1,6 +1,6 @@
 require 'nokogiri'
 require 'pry'
-require "Open-URI"
+require "open-uri"
 
 def create_project_hash
   html = open("https://www.goodreads.com/genres/fiction")
